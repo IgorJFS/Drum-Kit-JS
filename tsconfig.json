@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "module": "commonjs", 
+    "outDir": "./",       // Os arquivos JS serão gerados na mesma pasta dos TS
+    "rootDir": "./",      // Os arquivos TS serão lidos da mesma pasta
+    "strict": true,       
+    "esModuleInterop": true, 
+    "skipLibCheck": true, 
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false,   // Não gera arquivos .d.ts (opcional, pode ser true se precisar)
+    "sourceMap": false      // Não gera arquivos .map (opcional, pode ser true se precisar)
+  },
+  "include": [
+    "*.ts"        // Inclui todos os arquivos .ts na raiz do projeto
+    // Ou, se você tiver subpastas mas não quer "src":
+    // "**/*.ts"   // Inclui todos os arquivos .ts em qualquer subpasta também
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
